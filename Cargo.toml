@@ -1,6 +1,6 @@
 [package]
 name = "new_flattened"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Hirochika Matsumoto <matsujika@gmail.com>"]
 edition = "2018"
 description = "Macro to flatten nested calls of `new`s"
