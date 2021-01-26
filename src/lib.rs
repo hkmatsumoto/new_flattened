@@ -1,3 +1,12 @@
+//! This crates provides `new_flattened!` macro which enables you to write
+//! ```rust,ignore
+//! new_flattened!(42, Box, Box, Box)
+//! ```
+//! instead of
+//! ```rust,ignore
+//! Box::new(Box::new(Box::new(42)))
+//! ```
+
 /// Macro to flatten nested calls of `new`s.
 ///
 /// # Examples
