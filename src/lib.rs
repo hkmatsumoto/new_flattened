@@ -1,3 +1,14 @@
+/// Macro to flatten nested calls of `new`s.
+///
+/// # Examples
+///
+/// ```rust
+/// use new_flattened::new_flattened;
+/// assert_eq!(
+///     Box::new(Box::new(Box::new(42))),
+///     new_flattened!(42, Box, Box, Box),
+/// )
+/// ```
 #[macro_export]
 macro_rules! new_flattened {
     ($value:expr, $container:ident) => {
